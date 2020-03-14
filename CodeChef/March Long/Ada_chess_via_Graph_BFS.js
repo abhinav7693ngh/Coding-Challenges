@@ -1,4 +1,4 @@
-// Didn't work
+// Did work
 
 
 class Graph{
@@ -35,14 +35,17 @@ class Graph{
                 myAns.push(myVertex);
                 Graph.visited[myVertex] = true;
                 for(let i of my.adjacencyList[myVertex]){
-                    Graph.queue.unshift(i);
+                    Graph.queue.push(i);
                 }
+            }
+            else{
+                myAns.push(myVertex);
             }
         }
     }
     bfs(vertex){
         let myAns = [];
-        Graph.queue.unshift(vertex);
+        Graph.queue.push(vertex);
         if(this.adjacencyList.hasOwnProperty(vertex)){
             Graph.bfsHelper(myAns);
         }
@@ -65,6 +68,8 @@ my.addEdge(62, 71);
 my.addEdge(62, 73);
 my.addEdge(62, 53);
 my.addEdge(71, 82);
+my.addEdge(73, 82);
+my.addEdge(13, 24);
 my.addEdge(73, 82);
 console.log(my.bfs(11));
 console.log(my);
