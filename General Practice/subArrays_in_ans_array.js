@@ -14,4 +14,10 @@ for(let i = 0;i<arr.length;i++){
     }
 }
 
-console.log(ans);
+let myans = [];
+ans.forEach(ele => {
+    let toPush = ele.map(my => parseInt(my));
+    myans.push(toPush); 
+});
+
+console.log(myans);
