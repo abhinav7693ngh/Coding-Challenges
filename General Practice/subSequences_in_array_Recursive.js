@@ -1,5 +1,5 @@
 // What is a subsequence ?
-// subSequence is a sequence that can be derived from another sequence by deleting some elements without changing the order
+// subSequence is a sequence that can be derived from another sequence by deleting some between elements without changing the order
 
 
 function helper(arr,indexQueue,ans){
