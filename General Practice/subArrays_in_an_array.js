@@ -1,3 +1,16 @@
+/*
+What is a subarray/SubString ?
+
+Subarray is a contiguous part in an array.
+
+Total number of subarray in an array is (n*(n+1)/2)
+
+
+
+*/
+
+
+
 let arr = [3,1,2];
 
 let ans = new Set();

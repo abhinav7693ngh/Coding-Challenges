@@ -1,5 +1,6 @@
 // What is a subsequence ?
-// subSequence is a sequence that can be derived from another sequence by deleting some between elements without changing the order
+// subSequence is a sequence that can be derived from another sequence by deleting some between elements without changing the order !!
+// Number of subsequence in an array - 2^n - 1;
 
 
 function helper(arr,indexQueue,ans){
